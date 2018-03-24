@@ -11,3 +11,23 @@
             Console.WriteLine("Element({0}) = {1}", j, n(j))
         Next j
         Console.ReadKey()
+
+# Arrays 2
+
+Sub Main()
+      Dim marks() As Integer
+      ReDim marks(2)
+      marks(0) = 85
+      marks(1) = 75
+      marks(2) = 90
+      ReDim Preserve marks(10)
+      marks(3) = 80
+      marks(4) = 76
+      marks(5) = 92
+      marks(6) = 99
+      marks(7) = 79
+      marks(8) = 75
+      For i = 0 To 10
+          Console.WriteLine(i & vbTab & marks(i))
+      Next i
+      Console.ReadKey()
